@@ -1,2 +1,2 @@
 # CASTSampleCode
-![](Cast-Gif-Part-1.gif)
+![](Cast Gif Part 1.gif)
