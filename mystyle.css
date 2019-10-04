@@ -1,0 +1,191 @@
+body {
+	background-color: #f0f0f0;
+}
+
+.castLogo {
+	width: 70%;
+	padding: 40px 30px 40px 30px;
+}
+
+.arrow {
+	width: 5vh;
+}
+
+.helper-text-container {
+	display: inline;
+	position: absolute;
+	bottom: -2.5vh;
+	overflow: visible;
+}
+
+#helper-search .helper-text-container {
+	right: 5vh;
+}
+
+#helper-type {
+	overflow: visible !important;
+}
+
+#helper-search {
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.helper-text {
+	font-size: 4.0vh;
+	font-family: 'Patrick Hand', cursive;
+	overflow: visible;
+	white-space:nowrap;
+}
+
+.helper-container {
+	margin-left: 12%;
+	margin-right: 12%;
+	position: relative;
+	display: none;
+}
+
+.searchContainer {
+	height: 6.6vh;
+	width: 70%;
+	margin-left: 15%;
+	position: relative;
+}	
+
+.resultView .searchResults {
+	max-width: 700px;
+}
+
+.searchBar {
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	width: calc(100% - 3.7vh);
+	text-align: left;
+	padding: 0.4vw 0.4vw 0.4vw 0.8vw;
+	font-size: 3.7vh;
+	vertical-align: middle;
+	border-radius: 1vh 0vh 0vh 1vh;
+	white-space: nowrap;
+	overflow: hidden;
+	background-color: white;
+	z-index: 10;
+}
+
+.searchBar br {
+	display: none;
+}
+
+.searchBar * {
+	display: inline;
+	white-space: nowrap;
+}
+
+.searchBar:focus {
+	outline: none;
+}
+
+.searchBar-wrapper {
+	display: flex;
+	position: relative;
+	height: 105%;
+	margin-bottom: 10px;
+}
+
+.searchButton {
+	position: relative;
+	height: 100%;
+	width: 8vh;
+	background-color: dodgerblue;
+	display: flex;
+	border-radius: 0 1vh 1vh 0;
+	border-bottom: solid rgb(34, 134, 235) 4px;
+	z-index: 10;
+}
+
+.searchButton:hover {
+	border-bottom: none;
+	background-color: rgb(34, 134, 235);
+	cursor: pointer;
+}
+
+.searchButton i {
+	font-size: 4vh;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: black;
+}
+
+/* Result View */
+.resultView {
+	margin-left: 5%;
+}
+
+.resultView .castLogo {
+	width: 20%;
+	padding: 0px;
+	margin-top: 2%;
+}
+
+@media only screen and (min-width: 800px){
+	.resultView #logo-container{
+		text-align: left !important;
+	}
+}
+
+.resultView .searchContainer {
+	margin-left: 0;
+}
+
+.resultView .searchBar {
+	font-size: 2.5vh; 
+	height: 5.0vh;
+}
+
+.resultView .searchBar-wrapper {
+	margin: 14px 0px 14px 0px;
+}
+
+.resultView .searchButton {
+	height: 5vh;
+	width: 5.0vh;
+	border-bottom: solid rgb(34, 134, 235) 2px;
+}
+
+.resultView .searchButton i {
+	font-size: 2.7vh;
+}
+
+#loadingIcon {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.stopWord {
+	color: #c1c1c1;
+}
+
+[contenteditable=true]:empty:before {
+	content: attr(placeholder);
+	display: block; /* For Firefox */
+	color: #c1c1c1;
+  }
+
+  @media only screen and (max-width: 800px){
+	.resultView .searchContainer{
+		width: 100%;
+	}
+	.row {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.container, .col-md-12, .row-md-12 {
+		padding-right: 5px !important; /* overides bootstrap padding*/
+		padding-left: 5px !important;
+		margin-right: auto;
+		margin-left: auto;
+		width: 100%;
+	}
+}
