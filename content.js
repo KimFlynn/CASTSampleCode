@@ -1,6 +1,6 @@
 /*
 @file Javascript functions for search engine content
-@author: Brody Downs, Tyler French, Mikey Krentz CAST Team at Boise State University
+@author: Brody Downs, Tyler French, Mikey Krentz, Kim Flynn CAST Team at Boise State University
 */
 
 /* Instance Variables */
