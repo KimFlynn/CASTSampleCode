@@ -19,6 +19,18 @@ Personal Contributions:
 
 add gif of media being adjustable 
 
+Created beta readability sorter, toolbar, image and video pages, responsive format, and spellchecker tester.
+
+Beta readability/ reliability sorter: Before the readability sorter, pages that were incredibly difficult to read or irrelevant for kids would often appear. For example, when typing "Saturn", the first first result would often be for a jeans company or an academic paper about saturn. In order to combat this, I scraped the front end code, filtered out everything that wasn't raw text (i.e. html), counted number of words per sentence, average lenght of words per sentence, number of sentences for the page, and multiple other factors. After sorting through this, each factor would be weighted and summed up. Scores with lower numbers (indicating fewer words per sentence, shorter words, etc) would be pushed to the top of the array. Additionally, sights that were educational were pushed forward as students would typically be looking for a .org sight (i.e. wikipedia) instead of a seller. This was done by factoring ".com" sights lower in the array. This will be scrapped in the final version of CAST in favor of a ML version, but the proof of concept was made from this.
+
+Images/Videos/Toolbar: The image page was created by taking image links from the google api supplied results, filtering links through the profanity filter, and pasting each into a responsive bootstrap image class, and pasting. For screen widths less than 720px, fewer images were displayed per row. For videos, a Youtube API was used to create a search, get results, and post search results. Similar to the image page, results were posted into a responsive grid and changed based on screen size. For now, we stuck with 3 images for large screens while users are previewing a web page. This may be up to change as CAST is still exploring the ethics of scraping webpages. 
+
+Spell Checker Tester: This was my first project with CAST. I created a program which could read in any csv file of mispelled words and correct word, run each word through plugged in spell checkers, output the first 10 results from each spell checker, and check if the word is correct. The spellchecker tester would check which part of the array the correct word was (first, non-existant, etc), keep track of the time of each word, total run time, total accuracy (weighted based on position of correct word), and highlight which words the spellchecker did not get right within the first 5 suggestions. 
+
+Responsive format: Images were posted above into 
+
+
+
 The code provided is a very small sample of the code I reguarly worked with and created. Permission to make temporarily public granted by from Downs at Boise State University. 
 
 
